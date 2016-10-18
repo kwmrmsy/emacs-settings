@@ -9,6 +9,8 @@
 (global-set-key "\M-k" 'forward-char)
 ;;(global-set-key "\C-" 'mark-paragraph)
 (global-unset-key "\C-\\")
+(global-set-key "\C-M" 'set-mark-command)
+(global-set-key "\C-U" 'undo)
 
 ;; M-n and M-p
 (global-unset-key "\M-p")
@@ -37,12 +39,12 @@
 (global-set-key "\C-Q" 'match-paren)
 
 ;;global(gtags)
-(setq load-path (cons "." load-path))
-(require 'gtags)
-(global-set-key "\M-t" 'gtags-find-tag)
-(global-set-key "\M-r" 'gtags-find-rtag)
-(global-set-key "\M-s" 'gtags-find-symbol)
-(global-set-key "\M-i" 'gtags-pop-stack)
+;;(setq load-path (cons "." load-path))
+;;(require 'gtags)
+;;(global-set-key "\M-t" 'gtags-find-tag)
+;;(global-set-key "\M-r" 'gtags-find-rtag)
+;;(global-set-key "\M-s" 'gtags-find-symbol)
+;;(global-set-key "\M-i" 'gtags-pop-stack)
 
 ;;color
 (defvar my/bg-color "#000019")
