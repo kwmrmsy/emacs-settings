@@ -9,8 +9,8 @@
 (global-set-key "\M-k" 'forward-char)
 ;;(global-set-key "\C-" 'mark-paragraph)
 (global-unset-key "\C-\\")
-(global-set-key "\C-M" 'set-mark-command)
-(global-set-key "\C-U" 'undo)
+(global-set-key "\C-\\" 'set-mark-command)
+(global-set-key "\M-^" 'undo)
 
 ;; M-n and M-p
 (global-unset-key "\M-p")
